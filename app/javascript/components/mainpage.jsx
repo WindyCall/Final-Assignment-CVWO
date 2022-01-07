@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Word from './word';
-import './bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/css/bootstrap.css';
 import Taglist from './taglist';
 
 // can not have the same word
@@ -42,7 +42,6 @@ class Mainpage extends React.Component {
                     tagidnow = {this.props.tagidnow}
                 />
             </div>
-            
             {this.props.words.map( word => {
                 if ((this.props.letters === "" || word.attributes.name.toLowerCase().includes(this.props.letters.toLowerCase()))
                     && (word.attributes.tag === this.props.Filtertagselectednow || this.props.Filtertagselectednow === "")) {

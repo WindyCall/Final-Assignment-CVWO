@@ -231,7 +231,6 @@ class App extends React.Component {
        Addtaginputnow = {this.state.Addtaginputnow}
        onAddtaginputchange = {this.handleAddtaginputchange}
       />
-      <div className='m-1'>
       <Mainpage 
         letters = {this.state.letters}
         Filtertagselectednow = {this.state.Filtertagselectednow}
@@ -243,7 +242,7 @@ class App extends React.Component {
         tagidnow = {this.statetagidnow}
         words = {this.state.words}
         onAddword = {this.handleAddword}
-      /></div>
+      />
     </div>
     );
   }
