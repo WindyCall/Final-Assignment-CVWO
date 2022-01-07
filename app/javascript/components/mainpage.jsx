@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Word from './word';
-import 'bootstrap/dist/css/bootstrap.css';
 import Taglist from './taglist';
 
 // can not have the same word
