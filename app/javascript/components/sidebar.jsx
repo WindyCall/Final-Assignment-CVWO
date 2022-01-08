@@ -55,7 +55,7 @@ class Sidebar extends React.Component {
                 />
             <button
                 onClick={() => this.props.onAddtag(this.props.Addtaginputnow)}
-                className="btn btn-secondary btn"
+                className="btn btn-success btn"
             >
                 Add tag
             </button>
