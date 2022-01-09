@@ -192,6 +192,9 @@ class App extends React.Component {
             this.getTags();
             this.setState({Addtaginputnow: ""})
             this.setState({Filtertagselectednow: ""})
+            if (this.state.Addtagselectednow === tagname) {
+              this.setState({ Addtagselectednow: "" })
+            }
             alert('The tag has been successfully deleted');
         }
         else{
