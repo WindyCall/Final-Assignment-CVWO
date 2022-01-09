@@ -190,7 +190,6 @@ class App extends React.Component {
     }).then((response) => {
         if (response.status === 204){
             this.getTags();
-            this.setState({Addtaginputnow: ""})
             this.setState({Filtertagselectednow: ""})
             if (this.state.Addtagselectednow === tagname) {
               this.setState({ Addtagselectednow: "" })
