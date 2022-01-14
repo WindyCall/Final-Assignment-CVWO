@@ -22,8 +22,10 @@ class Mainpage extends React.Component {
     }
     render() { 
         return (
-        <div>
-            <h2>My-words list</h2>
+        <div className="container col-md-9">
+            <div className="row justify-content-center">
+            <h2 className="text-center"> My-words list </h2>
+            </div>
             <div className="input-group mb-3">
                 <button
                     onClick = {() => this.props.onAddword(this.refs.addWord.value, this.props.Addtagselectednow)}
@@ -41,13 +43,16 @@ class Mainpage extends React.Component {
                     tagidnow = {this.props.tagidnow}
                 />
             </div>
+            <ul id = "">
             {this.props.words.map( word => {
                 if ((this.props.letters === "" || word.attributes.name.toLowerCase().includes(this.props.letters.toLowerCase()))
                     && (word.attributes.tag === this.props.Filtertagselectednow || this.props.Filtertagselectednow === "")) {
-                    return <Word
-                        key = {word.id}
+                    return (
+                        <a className="list-group-item list-group-item-action list-group-item-dark bg-light">
+                        <Word
+                        key = {word.attributes.name + word.attributes.id}
                         name = {word.attributes.name}
-                        id = {word.id}
+                        id = {word.id} 
                         onDelete = {this.props.onDelete}
                         onUpdate = {this.props.onUpdate}
                         onUpdatechange = {this.handleUpdateChange}
@@ -56,9 +61,12 @@ class Mainpage extends React.Component {
                         taglist = {this.props.taglist}
                         tagidnow = {this.props.tagidnow}
                     />
+                    </a>
+                    )
                 }   
             }
             )}
+            </ul>
         </div>
         );
     }

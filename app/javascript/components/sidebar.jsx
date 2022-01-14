@@ -18,7 +18,7 @@ class Sidebar extends React.Component {
     render() { 
         //this.props.onSearch(this.refs.searchWord.value);
         return (
-        <div>
+        <div className="col-md-3 bg-light">
             <h3>Search for your words</h3>
             <div className="input-group mb-3">
                 <input type="text" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"

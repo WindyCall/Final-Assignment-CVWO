@@ -13,4 +13,7 @@
  *= require_tree .
  *= require_self
  */
+ ul li:hover {
+    background: #ddd;
+}
 
