@@ -37,7 +37,7 @@ class Word extends React.Component {
 
     render() { 
         return (
-            <div className='custom-control'>
+            <div className='custom-control bg-light'>
                 <h4 onClick={this.checkclick} className='m-2'>
                     {this.props.name}
                 </h4>
@@ -89,7 +89,7 @@ class Word extends React.Component {
                         taglist = {this.props.taglist}
                         tagidnow = {this.props.tagidnow}
                     />
-                    <br /><br /><br />
+                    <br /><br />
 
                     <button
                         onClick={() => this.props.onUpdate(this.props.word.id, this.refs.Updateword.value, this.props.Updateselectedtypenow)}

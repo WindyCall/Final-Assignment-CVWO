@@ -221,7 +221,7 @@ class App extends React.Component {
 
   render() { 
     return (
-    <div className="row m-2">
+    <div className="row m-1">
       <Sidebar
        onSearchword = {this.handleSearchword}
        onFilterchange = {this.handleFilterchange}

@@ -43,12 +43,11 @@ class Mainpage extends React.Component {
                     tagidnow = {this.props.tagidnow}
                 />
             </div>
-            <ul id = "">
+            <ul className="">
             {this.props.words.map( word => {
                 if ((this.props.letters === "" || word.attributes.name.toLowerCase().includes(this.props.letters.toLowerCase()))
                     && (word.attributes.tag === this.props.Filtertagselectednow || this.props.Filtertagselectednow === "")) {
                     return (
-                        <a className="list-group-item list-group-item-action list-group-item-dark bg-light">
                         <Word
                         key = {word.attributes.name + word.attributes.id}
                         name = {word.attributes.name}
@@ -61,7 +60,6 @@ class Mainpage extends React.Component {
                         taglist = {this.props.taglist}
                         tagidnow = {this.props.tagidnow}
                     />
-                    </a>
                     )
                 }   
             }
