@@ -1,24 +1,12 @@
-# README
+This project is the Final-assignment for NUS Computing for Voluntary Welfare Organisations (CVWO) for 2021/2022
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Done by:
 
-Things you may want to cover:
+Name: XIAO YAN
 
-* Ruby version
+Matrix Number: A0245626B
 
-* System dependencies
+Note: My final-writeup is in the "Final Submission" folder
 
-* Configuration
+Website: https://cvwofinal1.herokuapp.com/
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
